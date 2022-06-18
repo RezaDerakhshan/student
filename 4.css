@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Mochiy+Pop+P+One&display=swap');
+/*Common Area*/
+html{
+	scroll-behavior: smooth;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background-color: #ccc;
+}
+p{
+	font-family: 'Mochiy Pop P One', sans-serif;
+	text-align: justify;
+	font-weight: 400;
+}
+h1{
+	font-family: 'Comforter', cursive;
+	font-size: 40px;
+}
+.container{
+	width: 80%;
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 20px;
+	min-height: 100vh;
+}
+img{
+	max-width: 100%;
+	box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+}
+.mt20px{
+	margin-top: 20px;
+}
+.clr{
+	clear: both;
+}
+/*Design Navigation*/
+nav{
+	width: 100%;
+}
+nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border-radius: 5px;
+	background-color: #262626;
+}
+nav ul li{
+	display: inline-block;
+}
+nav ul li a{
+	display: block;
+	padding: 15px 20px;
+	color: #fff;
+	text-decoration: none;
+}
+#active,nav ul li a:hover{
+	background-color: darkred;
+	border-radius: 5px;
+}
+
+/*Design Main ARea*/
+.w70{
+	float: left;
+	width: 70%;
+	min-height: 400px;
+}
+.post{
+	background-color: #f1f1f1;
+	padding: 20px;
+	border-radius: 5px;
+
+}
+.w30{
+	float: right;
+	width: 28%;
+	min-height: 400px;
+	box-sizing: border-box;
+	padding: 20px;
+}
+.w30 h1{
+	text-align: center;
+}
+.w30 ul{
+	text-align: center;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.w30 ul li{
+	padding: 5px;
+	border-bottom: 2px dashed darkred;
+}
+.w30 ul li:hover{
+	background-color: darkred;
+	color: #fff;
+}
+/*Design Footer Area*/
+#main-footer{
+	background-color: #252525;
+	color: #fff;
+	padding: 20px;
+	font-size: 20px;
+	border-radius: 5px;
+}
+#main-footer p{
+	text-align: center;
+}
+
+/*Design Go top Button*/
+.fix{
+	position: fixed;
+	left:10px;
+	bottom: 80px;
+}
+.btn{
+	text-align: center;
+}
+.top a{
+	text-decoration: none;
+	color:#000;
+	border: 2px solid black;
+	border-radius: 10px;
+	padding: 5px 15px;
+	font-size: 18px;
+}
+.top a:hover{
+	animation: anisa 3s forwards;
+}
+@keyframes anisa{
+	from{
+		background-color: #252525;
+		color: #fff;
+		border: none;
+	}
+	to{
+		background-color: darkred;
+		color: #fff;
+		border: none;
+	}
+}
+
+/*Design Responsive View*/
+/*Mobile View*/
+@media (max-width: 640px){
+	.w70{
+		float: none;
+		width: 100%;
+	}
+	.w70 h1{
+		text-align: center;
+	}
+	.w30{
+		float: none;
+		width: 100%;
+	}
+	nav{
+		text-align: center;
+	}
+	nav ul li{
+		display: block;
+		border-bottom: 2px dashed darkred;
+	}
+}
